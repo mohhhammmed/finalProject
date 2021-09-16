@@ -37,14 +37,15 @@
                         @auth()
                       
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item"href="{{route('file_create')}}">Add File</a></li>
-                                <li><a class="dropdown-item" href="{{route('file_index')}}">All Files</a></li>
-                            </ul>
-                        </li>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                   Files
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{route('file_create')}}">Add File</a>
+                                    <a class="dropdown-item" href="{{route('file_index')}}">All File</a>
+                                </div>
+                            </li>
                         @endauth
                     </ul>
                     <!-- Right Side Of Navbar -->
