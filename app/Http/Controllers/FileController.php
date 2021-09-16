@@ -13,6 +13,8 @@ class FileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    
     public function index()
     {
         $files=File::all();
@@ -37,16 +39,22 @@ class FileController extends Controller
      */
     public function store(RequestValid $request)
     {
-        $file=$request->file('mainFile');
-        $file_name=$file->getClientOriginalName();
-        $file->move(public_path() . "/uploades/",$file_name);
-        File::create([
-            'title'=>$request->title,
-            'desc'=>$request->desc,
-            'mainFile'=>$file_name,
-        ]);
+        try{
 
-        return redirect(route('file_index'));
+            $file=$request->file('mainFile');
+            $file_name=$file->getClientOriginalName();
+            $file->move(public_path() . "/uploades/",$file_name);
+            File::create([
+                'title'=>$request->title,
+                'desc'=>$request->desc,
+                'mainFile'=>$file_name,
+            ]);
+    
+            return redirect(route('file_index'));
+        }catch(\Exception $ex){
+            return redirect(route('file_index'))->with('error','Updated False');
+        }
+       
     }
 
     /**
@@ -76,6 +84,7 @@ class FileController extends Controller
 
     public function download($id)
     {
+
         $file=File::where('id',$id)->firstOrfail();
         $file_path=public_path('uploades/'.$file->mainFile);
         return response()->download($file_path);
@@ -112,8 +121,6 @@ class FileController extends Controller
         }catch(\Exception $ex){
             return redirect(route('file_index'))->with('error','Updated False');
         }
-        
-        
     }
 
     /**
@@ -124,11 +131,16 @@ class FileController extends Controller
      */
     public function destroy($id)
     {
-        $mainFile=File::where('id',$id)->firstOrfail();
-        if(isset($mainFile) && $mainFile != null){
-           // unlink('uploades/'.$mainFile->mainFile);
-            $mainFile->delete();
-            return redirect(route('file_index'))->with('success','Deleted Done');
+        try{
+            $mainFile=File::where('id',$id)->firstOrfail();
+            if(isset($mainFile) && $mainFile != null){
+                unlink('uploades/'.$mainFile->mainFile);
+                $mainFile->delete();
+                return redirect(route('file_index'))->with('success','Deleted Done');
+            }
+        }catch(\Exception $ex){
+            return redirect(route('file_index'))->with('error','Updated False');
         }
+       
     }
 }
