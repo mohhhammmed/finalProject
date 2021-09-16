@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:8000/en/admin/orders -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- SITE TITTLE -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="tBLO6g1Zw2v3IkLy3LWIPBEmGvl0KlH3CnWOpxWr">
+    <title>Classimax</title>
+
+
+      
+
+      <link rel="stylesheet" href="./Classimax_files/bootstrap-icons.css">
+                <!-- FAVICON -->
+    <link href="http://127.0.0.1:8000/admin/images/favicon.png" rel="shortcut icon">
+    <!-- PLUGINS CSS STYLE -->
+    <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./Classimax_files/datatable.css">
+    <link rel="stylesheet" href="./Classimax_files/bootstrap.css">
+   
+
+    
+    <link rel="stylesheet" href="./Classimax_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Classimax_files/bootstrap-slider.css">
+    <!-- Font Awesome -->
+    <link href="./Classimax_files/font-awesome.min.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="./Classimax_files/slick.css" rel="stylesheet">
+    <link href="./Classimax_files/slick-theme.css" rel="stylesheet">
+    <!-- Fancy Box -->
+    <link href="./Classimax_files/jquery.fancybox.pack.css" rel="stylesheet">
+    <link href="./Classimax_files/nice-select.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="./Classimax_files/style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style><script type="text/javascript" charset="UTF-8" src="./Classimax_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Classimax_files/util.js.download"></script></head>
+
+<body class="body-wrapper" data-new-gr-c-s-check-loaded="14.1018.0" data-gr-ext-installed="">
+
+    <section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="http://127.0.0.1:8000/en/admin/index.html">
+						<img src="./Classimax_files/logo.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+										<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item active">
+								<a class="nav-link" href="http://127.0.0.1:8000/en/user/home">Home</a>
+							</li>
+
+
+									                                <li class="nav-item dropdown dropdown-slide">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://127.0.0.1:8000/en/admin/orders">Main Categories<span><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <!-- Dropdown list -->
+                                    <div class="dropdown-menu">
+
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/maincategoriess">Main Categories</a>
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/create_maincat">Add Main Categories</a>
+                                   </div>
+                            </li>
+                                <li class="nav-item dropdown dropdown-slide">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://127.0.0.1:8000/en/admin/orders">Sub Categories<span><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <!-- Dropdown list -->
+                                    <div class="dropdown-menu">
+
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/create_parent">Add parent of sub Categories</a>
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/subcategories">Sub Categories</a>
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/create_subcategory">Add Sub Categories</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-slide">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://127.0.0.1:8000/en/admin/orders">Vendors<span><i class="fa fa-angle-down"></i></span>
+                                    </a>
+
+                                    <!-- Dropdown list -->
+                                    <div class="dropdown-menu">
+
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/all_vendors">All Vendors</a>
+                                        <a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/create">Add Vendor</a>
+
+                                    </div>
+                                </li>
+
+                                                        							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://127.0.0.1:8000/en/admin/orders">Lang<span><i class="fa fa-angle-down"></i></span>
+								</a>
+
+								<!-- Dropdown list -->
+
+
+								<div class="dropdown-menu">
+
+                                                                            
+                                        <a data-toggle="tooltip" data-placement="top" title="" class="dropdown-item" href="http://127.0.0.1:8000/ar/admin/orders" data-original-title="choose">
+                                            العربيه
+                                        </a>
+                                                                                                                    
+                                        <a data-toggle="tooltip" data-placement="top" title="" class="dropdown-item" href="http://127.0.0.1:8000/en/admin/orders" data-original-title="the Used">
+                                            english
+                                        </a>
+                                                                                                                    
+                                        <a data-toggle="tooltip" data-placement="top" title="" class="dropdown-item" href="http://127.0.0.1:8000/fr/admin/orders" data-original-title="choose">
+                                            freanch
+                                        </a>
+                                                                            
+
+									                                  <a class="dropdown-item" data-toggle="tooltip" title="" href="http://127.0.0.1:8000/en/available_langs" data-original-title="settings">Langs</a>
+									<a class="dropdown-item" href="http://127.0.0.1:8000/en/admin/add_lang">Add Lang</a>
+
+									
+								</div>
+
+							</li>
+													</ul>
+												<ul class="navbar-nav ml-auto mt-10">
+							<li class="nav-item">
+								                                    <a class="nav-link login-button" href="http://127.0.0.1:8000/en/admin/overs">
+                                        Overs<span class="badge bg-primary rounded-pill" style="color:white">
+                                            0</span>
+                                    </a>
+                                            
+                                    <a class="nav-link login-button" href="http://127.0.0.1:8000/en/admin/orders">Orders<span class="badge bg-primary rounded-pill" style="color:white">
+                                            0</span>
+                                    </a>
+								                                                                    
+							</li>
+													</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+    <!--==================================
+=            User Profile            =
+===================================-->
+
+
+<section class="section">
+                    <div class="card">
+                        <div class="card-header">
+                            Simple Datatable
+                        </div>
+                        <div class="card-body">
+                            <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns"><div class="dataTable-top"><div class="dataTable-dropdown"><select class="form-select" style="/* display: none; */"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select><label>entries per page</label></div><div class="dataTable-search"><input class="dataTable-input" placeholder="Search..." type="text"></div></div><div class="dataTable-container"><table class="table table-striped dataTable-table" id="table1">
+                                <thead>
+                                    <tr><th data-sortable="" style="width: 12.5478%;"><a href="http://127.0.0.1:8000/en/admin/orders#" class="dataTable-sorter">Name</a></th><th data-sortable="" style="width: 41.7751%;"><a href="http://127.0.0.1:8000/en/admin/orders#" class="dataTable-sorter">Email</a></th><th data-sortable="" style="width: 18.8982%;"><a href="http://127.0.0.1:8000/en/admin/orders#" class="dataTable-sorter">Phone</a></th><th data-sortable="" style="width: 16.7559%;"><a href="http://127.0.0.1:8000/en/admin/orders#" class="dataTable-sorter">City</a></th><th data-sortable="" style="width: 10.023%;"><a href="http://127.0.0.1:8000/en/admin/orders#" class="dataTable-sorter">Status</a></th></tr>
+                                </thead>
+                                <tbody><tr><td>Graiden</td><td>vehicula.aliquet@semconsequat.co.uk</td><td>076 4820 8838</td><td>Offenburg</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Dale</td><td>fringilla.euismod.enim@quam.ca</td><td>0500 527693</td><td>New Quay</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Nathaniel</td><td>mi.Duis@diam.edu</td><td>(012165) 76278</td><td>Grumo Appula</td><td>
+                                            <span class="badge bg-danger">Inactive</span>
+                                        </td></tr><tr><td>Darius</td><td>velit@nec.com</td><td>0309 690 7871</td><td>Ways</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Oleg</td><td>rhoncus.id@Aliquamauctorvelit.net</td><td>0500 441046</td><td>Rossignol</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Kermit</td><td>diam.Sed.diam@anteVivamusnon.org</td><td>(01653) 27844</td><td>Patna</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Jermaine</td><td>sodales@nuncsit.org</td><td>0800 528324</td><td>Mold</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Ferdinand</td><td>gravida.molestie@tinciduntadipiscing.org</td><td>(016977) 4107</td><td>Marlborough</td><td>
+                                            <span class="badge bg-danger">Inactive</span>
+                                        </td></tr><tr><td>Kuame</td><td>Quisque.purus@mauris.org</td><td>(0151) 561 8896</td><td>Tresigallo</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr><tr><td>Deacon</td><td>Duis.a.mi@sociisnatoquepenatibus.com</td><td>07740 599321</td><td>Karapınar</td><td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td></tr></tbody>
+                            </table></div><div class="dataTable-bottom"><div class="dataTable-info">Showing 1 to 10 of 26 entries</div><ul class="pagination pagination-primary float-end dataTable-pagination"><li class="page-item pager"><a href="http://127.0.0.1:8000/en/admin/orders#" class="page-link" data-page="1">‹</a></li><li class="page-item active"><a href="http://127.0.0.1:8000/en/admin/orders#" class="page-link" data-page="1">1</a></li><li class="page-item"><a href="http://127.0.0.1:8000/en/admin/orders#" class="page-link" data-page="2">2</a></li><li class="page-item"><a href="http://127.0.0.1:8000/en/admin/orders#" class="page-link" data-page="3">3</a></li><li class="page-item pager"><a href="http://127.0.0.1:8000/en/admin/orders#" class="page-link" data-page="2">›</a></li></ul></div></div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+
+<!--   
+ <div id="main" style='margin:-90px 0px 0px 0px'>
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+        <div class="page-heading">
+      
+            <section class="section">
+                <div class="card">
+                    <div class="card-header">
+                        Simple Datatable
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped" id="table1">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th class='text text-center'>Email</th>
+                                <th class='text text-center'>Product</th>
+                                <th class='text text-center'>Phone</th>
+                                <th class='text text-center'>Image</th>
+                                <th class='text text-center'>Title</th>
+                                <th class='text text-center'>Price</th>
+                                <th class='text text-center'>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                                                                                <tr>
+                                        <td>mohamed fouad mohamed</td>
+                                        <td class="text-center">af5388@gmail.com</td>
+                                        <td class="text-center">kdl</td>
+                                        <td class="text-center">10479175</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/kdl1624064024.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf.beba.taha</td>
+                                        <td class="text-center">5454</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="1" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?1">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad mohamed</td>
+                                        <td class="text-center">af5345@gmail.com</td>
+                                        <td class="text-center">kdl</td>
+                                        <td class="text-center">104791578</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/kdl1624064024.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf.beba.taha</td>
+                                        <td class="text-center">158</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="2" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?2">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad mohamed</td>
+                                        <td class="text-center">af95485388@gmail.com</td>
+                                        <td class="text-center">kdl</td>
+                                        <td class="text-center">1098254</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/kdl1624064024.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf.beba</td>
+                                        <td class="text-center">5454</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="8" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?8">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad</td>
+                                        <td class="text-center">mm@gmail.com</td>
+                                        <td class="text-center">mac c</td>
+                                        <td class="text-center">1009824885</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/mac c1624063983.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf</td>
+                                        <td class="text-center">12000</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="9" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?9">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad</td>
+                                        <td class="text-center">mm545@gmail.com</td>
+                                        <td class="text-center">mac c</td>
+                                        <td class="text-center">100982545</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/mac c1624063983.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf</td>
+                                        <td class="text-center">12000</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="10" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?10">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad</td>
+                                        <td class="text-center">mm5245@gmail.com</td>
+                                        <td class="text-center">mac c</td>
+                                        <td class="text-center">10098545</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/mac c1624063983.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf</td>
+                                        <td class="text-center">12000</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="11" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?11">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad</td>
+                                        <td class="text-center">mm445@gmail.com</td>
+                                        <td class="text-center">mac c</td>
+                                        <td class="text-center">108545</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/mac c1624063983.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf</td>
+                                        <td class="text-center">12000</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="12" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?12">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>srsdds</td>
+                                        <td class="text-center">md777@gmail.com</td>
+                                        <td class="text-center">mac 13</td>
+                                        <td class="text-center">1024835</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/mac 131624002359.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">baniseuf</td>
+                                        <td class="text-center">15000</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="13" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?13">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad mohamed</td>
+                                        <td class="text-center">af90453415@gmail.com</td>
+                                        <td class="text-center">sfh</td>
+                                        <td class="text-center">1048279563</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/sfh1624427907.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">cairo</td>
+                                        <td class="text-center">12558</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="16" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?16">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>mohamed fouad mohamed</td>
+                                        <td class="text-center">af90545@gmail.com</td>
+                                        <td class="text-center">sfh</td>
+                                        <td class="text-center">1048279789</td>
+                                        <td class="product-thumb text-center">
+                                            <img width="80px" height="auto"
+                                                 src="http://127.0.0.1:8000/admin/images/subcategories/sfh1624427907.jpg"
+                                                 alt="image description"></td>
+                                        <td class="text-center">cairo</td>
+                                        <td class="text-center">12558</td>
+                                        <td class="action text-center" data-title="Action">
+                                            <div class="">
+                                                <ul class="list-inline justify-content-center">
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Edit" class="edit" href="">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a data-toggle="tooltip" data-placement="top" title="trash" get_id="17" class="delete delData" href="http://127.0.0.1:8000/en/admin/del_order?17">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                            
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </section>
+
+      
+
+   </div>
+   </div>
+    <!--============================
+    =            Footer            =
+    =============================-->
+
+    <footer class="footer section section-sm">
+    <!-- Container Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+                <!-- About -->
+                <div class="block about">
+                    <!-- footer logo -->
+                    <img src="./Classimax_files/logo-footer.png" alt="">
+                    <!-- description -->
+                    <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <!-- Link list -->
+
+            <!-- Link list -->
+
+            <!-- Promotion -->
+            <div class="col-lg-7 col-md-7" style="margin-left: 180px">
+                <!-- App promotion -->
+                <div class="block-2 app-promotion">
+                    <div class="mobile d-flex">
+                        <a href="http://127.0.0.1:8000/en/admin/orders">
+                            <!-- Icon -->
+                            <img src="./Classimax_files/phone-icon.png" alt="mobile-icon">
+                        </a>
+                        <p>Get the Dealsy Mobile App and Save more</p>
+                    </div>
+                    <div class="download-btn d-flex my-3">
+                        <a href="http://127.0.0.1:8000/en/admin/orders#"><img src="./Classimax_files/google-play-store.png" class="img-fluid" alt=""></a>
+                        <a href="http://127.0.0.1:8000/en/admin/orders#" class=" ml-3"><img src="./Classimax_files/apple-app-store.png" class="img-fluid" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+    <!-- Container Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-12">
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p>Copyright © <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script>2021. All Rights Reserved, theme by <a class="text-primary" href="https://themefisher.com/" target="_blank">themefisher.com</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12">
+                <!-- Social Icons -->
+                <ul class="social-media-icons text-right">
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/themefisher" target="_blank"></a></li>
+                    <li><a class="fa fa-twitter" href="https://www.twitter.com/themefisher" target="_blank"></a></li>
+                    <li><a class="fa fa-pinterest-p" href="https://www.pinterest.com/themefisher" target="_blank"></a></li>
+                    <li><a class="fa fa-vimeo" href="http://127.0.0.1:8000/en/admin/orders"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+    <!-- To Top -->
+    <div class="top-to">
+        <a id="top" class="" href="http://127.0.0.1:8000/en/admin/orders#"><i class="fa fa-angle-up"></i></a>
+    </div>
+</footer>
+
+
+
+
+
+
+   
+   
+   
+                
+
+
+<!-- JAVASCRIPTS -->
+<script src="./Classimax_files/jquery.min.js.download"></script>
+<script src="./Classimax_files/popper.min.js.download"></script>
+<script src="./Classimax_files/bootstrap.min.js.download"></script>
+<script src="./Classimax_files/bootstrap-slider.js.download"></script>
+
+
+<script src="./Classimax_files/simple-datatables.js.download"></script>
+
+<script>
+
+    // Simple Datatable
+    let table1 = document.querySelector('#table1');
+    let dataTable = new simpleDatatables.DataTable(table1);
+</script>
+
+<!-- tether js -->
+<script src="./Classimax_files/tether.min.js.download"></script>
+<script src="./Classimax_files/jquery.raty-fa.js.download"></script>
+<script src="./Classimax_files/slick.min.js.download"></script>
+<script src="./Classimax_files/jquery.nice-select.min.js.download"></script>
+<script src="./Classimax_files/jquery.fancybox.pack.js.download"></script>
+<script src="./Classimax_files/SmoothScroll.min.js.download"></script>
+<!-- google map -->
+<script src="./Classimax_files/js"></script>
+<script src="./Classimax_files/gmap.js.download"></script>
+<script src="./Classimax_files/script.js.download"></script>
+
+<script src="./Classimax_files/jquery.min.js(1).download">
+</script>
+<script src="./Classimax_files/jquery-3.4.1.min.js.download" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+ 
+    <script>
+        $(document).on('click','.delData',function(e){
+            e.preventDefault();
+            var id=$(this).attr('get_id');
+            $.ajax({
+                type:'POST',
+                url:"http://127.0.0.1:8000/en/admin/del_order",
+                data:{
+                    'id':id,
+                    '_token':"tBLO6g1Zw2v3IkLy3LWIPBEmGvl0KlH3CnWOpxWr",
+                },
+
+                success:function(data){
+                    if(data.statue==true) {
+                        alert(data.msg);
+                    }
+                    alert(data.msg);
+                },
+                error:function(reject){
+
+                }
+
+            });
+        });
+    </script>
+
+
+
+</body></html>
